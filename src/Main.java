@@ -1,6 +1,7 @@
 public class Main {
-    int nr;
-    int pr;
-    int ss;
-    int mama;
+    public static void main(String args[]){
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+    }
 }
