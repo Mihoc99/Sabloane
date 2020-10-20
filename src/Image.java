@@ -1,11 +1,12 @@
-public class Image {
-    private String name;
 
-    Image(String name) {
-        this.name=name;
+public class Image implements Element {
+    public String ImageName;
+    String Iindex;
+    public Image(String ind){
+        this.Iindex=ind;
     }
 
-    public void  print() {
-        System.out.println("Image with name: " + this.name);
+    public void print(){
+        System.out.println(this.Iindex);
     }
 }

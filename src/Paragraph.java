@@ -1,11 +1,12 @@
-public class Paragraph {
-    private String name;
-
-    Paragraph(String name) {
-        this.name=name;
+public class Paragraph implements Element {
+    public String text;
+    String para;
+    public Paragraph(String p){
+        this.para=p;
     }
 
-    public void print() {
-        System.out.println("Paragraph with name: " + this.name);
+    public void print(){
+        System.out.println(this.para);
     }
+
 }

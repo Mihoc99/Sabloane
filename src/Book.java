@@ -1,50 +1,26 @@
 import java.util.ArrayList;
 
 public class Book {
-    private String title;
-
-    private ArrayList<Chapter> chapters = new ArrayList<>();
-    private ArrayList<Author> authors = new ArrayList<>();
-
-    Book(String title){
-        this.title=title;
+    String title;
+    Author author;
+    ArrayList<Element> elements= new ArrayList<>();
+    public Book(String t){
+        this.title=t;
     }
 
-    public int createChapter(String name){
-        Chapter ch  = new Chapter(name);
-        chapters.add(ch);
-        return chapters.indexOf(ch);
+    public void addAuthor(Author a) {
+        author=a;
     }
 
-    public Chapter getChapter(int index)
-    {
-        return chapters.get(index);
-    }
-
-    public void addAuthor(Author author){
-        authors.add(author);
+    public void addContent(Element e){
+        elements.add(e);
     }
 
     public void print(){
-        System.out.println("Book name: " + this.title);
-        printAuthors();
-        printChapters();
-
-    }
-
-    private void printChapters(){
-        for(Chapter i: chapters)
-        {
-            i.print();
+        System.out.println(this.title);
+        author.print();
+        for(Element e:elements){
+            e.print();
         }
     }
-
-    private void printAuthors(){
-        for(Author i: authors)
-        {
-            i.print();
-        }
-    }
-
-
 }
