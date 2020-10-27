@@ -1,3 +1,4 @@
+package lab1_2_3;
 
 public class Image implements Element {
     public String ImageName;

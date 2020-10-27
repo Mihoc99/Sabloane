@@ -1,3 +1,5 @@
+package lab1_2_3;
+
 public class Table implements Element {
     public String TaTitle;
     String TabTitle;

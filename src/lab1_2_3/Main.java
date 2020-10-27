@@ -1,3 +1,4 @@
+package lab1_2_3;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -17,7 +18,7 @@ public class Main {
         cap11.add(cap111);
         cap111.add(new Paragraph("Text from subchapter 1.1.1"));
         cap111.add(cap1111);
-        cap1111.add(new Image("Image subchapter 1.1.1.1"));
+        cap1111.add(new Image("lab1_2_3.Image subchapter 1.1.1.1"));
         noapteBuna.print();
     }
 }

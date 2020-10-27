@@ -1,3 +1,5 @@
+package lab1_2_3;
+
 public class Paragraph implements Element {
     public String text;
     String para;

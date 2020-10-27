@@ -1,3 +1,4 @@
+package lab1_2_3;
 
 import java.util.ArrayList;
 
@@ -32,10 +33,10 @@ public class SubChapter {
     public void print() {
         System.out.println("Subchapter:" + SubChName);
         for (Paragraph p : paragraphs) {
-            System.out.println("Paragraph:" + p.text);}
+            System.out.println("lab1_2_3.Paragraph:" + p.text);}
         for (Image i : images) {
-            System.out.println("Image with name:" + i.ImageName);}
+            System.out.println("lab1_2_3.Image with name:" + i.ImageName);}
         for (Table t : tables) {
-            System.out.println("Table with Title:" + t.TaTitle);}
+            System.out.println("lab1_2_3.Table with Title:" + t.TaTitle);}
     }
 }
