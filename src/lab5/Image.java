@@ -1,8 +1,9 @@
-package lab4;
+package lab5;
+
 import java.util.concurrent.TimeUnit;
 
 
-public class Image implements Element{
+public class Image implements Element {
 
     private String imageName;
 
