@@ -1,23 +1,13 @@
 package java.difexample;
 
-import jdk.internal.misc.InnocuousThread;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import org.springframework.context.ApplicationContext;
-import java.difexample.ClientComponent;
-import java.difexample.SingletonComponent;
-import java.difexample.TransientComponent;
 @SpringBootApplication
 public class MySpringApplication {
-    private static InnocuousThread SpringApplication;
-
-    public static <about> void main(String[] args) {
+    public static void main(String[] args) {
 //
 // Run this main function and inspect the output console to learn
-        about
+        //about
 // the lifecycle of objects within Spring Dependency Injection
-                Context
+                //Context
 //
 // Gets a handle of dependency injection context
 
@@ -35,7 +25,7 @@ public class MySpringApplication {
         transientBean.operation();
 // Gets an instance of SingletonComponent from the DI context
 // Note that the unique instance was created while application was
-       // loaded, before creating
+        //loaded, before creating
 // transient instances
 
         SingletonComponent singletonBean =
@@ -48,9 +38,9 @@ public class MySpringApplication {
         singletonBean.operation();
 // Gets an instance of another class that requires
 
-       // singleton/transient components
+        //singleton/transient components
 // Note where this instance was created and what beans were used to
-       // initialize it
+        //initialize it
         ClientComponent c = context.getBean(ClientComponent.class);
 
         c.operation();
